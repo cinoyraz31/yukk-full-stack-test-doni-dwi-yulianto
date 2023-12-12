@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+    nginx:
+        build:
+            context: ./nginx
+        container_name: app-nginx
+        ports:
+            - "5000:80"
+        depends_on:
+            - app
+        volumes:
+            - .:/home/source/main
+    db:
+        image: mysql
+        container_name: mysql
+        volumes:
+            - ./mysql/data:/var/lib/mysql
+        ports:
+            - "3306:3306"
+        environment:
+            - MYSQL_DATABASE=wallet_stack_test
+            - MYSQL_ROOT_PASSWORD=1234
+    app:
+        build: ./php
+        container_name: wallet-stack-test
+        volumes:
+            - .:/home/source/main
+        working_dir: /home/source/main
