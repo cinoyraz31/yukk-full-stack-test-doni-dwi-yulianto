@@ -21,4 +21,8 @@ RUN docker-php-ext-install mysqli pdo pdo_mysql && docker-php-ext-enable pdo_mys
 
 #install xdebug
 RUN pecl install xdebug
+
+# migrate DB
+CMD php artisan migrate:fresh
+
 COPY 90-xdebug.ini "${PHP_INI_DIR}"/conf.d
