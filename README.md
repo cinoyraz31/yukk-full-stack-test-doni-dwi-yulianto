@@ -31,7 +31,7 @@ http://localhost:5000
 Design Pattern
 ```
 Model
-View
+View -> Using bootstrap https://getbootstrap.com/docs/5.3/getting-started/introduction/
 Controller -> Only call service and render view
 Services -> The service insipartion from https://github.com/AaronLasseigne/active_interaction
 ```
