@@ -1,0 +1,19 @@
+.register-color{
+    background-color: #e9ecef;
+}
+.set-box-position-middle{
+    padding:20px;
+    background-color: #FFFFFF;
+    position:fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    color: #666;
+    border-top: 0;
+}
+.box-input-form{
+    margin:100px;
+    padding: 10px;
+    border: 1px solid #dadada;
+}
