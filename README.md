@@ -28,6 +28,14 @@ Running Application
 running in browser
 http://localhost:5000
 ```
+Design Pattern
+```
+Model
+View
+Controller -> Only call service and render view
+Services -> The service insipartion from https://github.com/AaronLasseigne/active_interaction
+```
+
 Design Flow Diagram
 <img src="https://drive.google.com/uc?id=1nU1QTEbNwbKlNzyVxdDoH_zJma42GjP1">
 
