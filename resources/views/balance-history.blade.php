@@ -29,7 +29,6 @@
                         @endif
                     </div>
                 </div>
-                <!-- Payment -->
                 <div class="card mb-4">
                     <div class="card-body">
                         <div class="row">
@@ -41,6 +40,18 @@
                         </div>
                     </div>
                 </div>
+                @if($transaction->type == 'top-up')
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class='mb-4'>Upload Transaction Payment</div>
+                                    <img src="/{{$transaction->image_url}}" style="max-width:400px;width:400px" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endif
             </div>
         </div>
     </div>

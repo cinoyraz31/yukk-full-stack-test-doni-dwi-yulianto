@@ -12,5 +12,6 @@ class Transaction extends Model
         'code',
         'amount',
         'description',
+        'image_url',
     ];
 }

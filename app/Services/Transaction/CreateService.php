@@ -44,6 +44,7 @@ class CreateService extends BaseService
             $transaction->code = $this->hashCode();
             $transaction->amount = $this->request['amount'];
             $transaction->description = $this->request['description'];
+            $transaction->image_url = $this->imageUrl;
             $transaction->save();
 
             $this->account->total_transaction += 1;
