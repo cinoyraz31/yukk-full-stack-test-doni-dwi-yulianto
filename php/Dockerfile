@@ -3,7 +3,7 @@ FROM php:8.2-fpm-alpine
 # Update app
 RUN apk update && apk add --no-cache tzdata
 # Set timezone
-ENV TZ="Asia/Ho_Chi_Minh"
+ENV TZ="Asia/Jakarta"
 
 RUN apk add --update --no-cache autoconf g++ make openssl-dev
 RUN apk add libpng-dev
@@ -21,8 +21,5 @@ RUN docker-php-ext-install mysqli pdo pdo_mysql && docker-php-ext-enable pdo_mys
 
 #install xdebug
 RUN pecl install xdebug
-
-# migrate DB
-CMD php artisan migrate:fresh
 
 COPY 90-xdebug.ini "${PHP_INI_DIR}"/conf.d
