@@ -26,6 +26,7 @@ class DetailService extends BaseService
 
         if(empty($transaction)){
             $this->errorMessage = "Transaction not found";
+            return;
         }
 
         $transactions = Transaction::where("user_id", Auth::id())
