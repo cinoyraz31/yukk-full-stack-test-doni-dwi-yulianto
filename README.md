@@ -23,6 +23,11 @@ $ docker-compose build #create image
 $ docker-compose up -d #create container
 ```
 
+DB Migration
+```
+docker exec -it wallet-stack-test php artisan migrate
+```
+
 Running Application
 ```
 running in browser
