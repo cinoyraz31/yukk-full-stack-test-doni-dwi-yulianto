@@ -28,7 +28,7 @@
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold  text-uppercase mb-1">
                                 TOP UP</div>
-                            <div class="h5 mb-0 font-weight-bold text-success">{{$transaction}}x</div>
+                            <div class="h5 mb-0 font-weight-bold text-success">{{$topup}}x</div>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-level-up-alt fa-2x text-info"></i>
@@ -44,7 +44,7 @@
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold  text-uppercase mb-1">
                                 Transaction</div>
-                            <div class="h5 mb-0 font-weight-bold text-success">{{$topup}}x</div>
+                            <div class="h5 mb-0 font-weight-bold text-success">{{$transaction}}x</div>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-level-down-alt fa-2x text-info"></i>
