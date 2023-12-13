@@ -23,6 +23,12 @@ $ docker-compose build #create image
 $ docker-compose up -d #create container
 ```
 
+Composer Install
+```
+docker exec -it wallet-stack-test composer install
+docker exec -it wallet-stack-test php artisan key:generate
+```
+
 DB Migration
 ```
 docker exec -it wallet-stack-test php artisan migrate
